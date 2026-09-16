@@ -1,7 +1,7 @@
 # First-level analysis
 
-This directory contains the original MATLAB workflow used for participant-level
-analysis of the fMRI meaning-judgment task.
+This directory contains the original MATLAB workflow used for first level
+analysis of the fMRI task.
 
 ## Files
 
