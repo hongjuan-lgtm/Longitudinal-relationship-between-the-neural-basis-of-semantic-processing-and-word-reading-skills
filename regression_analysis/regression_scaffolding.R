@@ -1,5 +1,5 @@
 # Scaffolding: does T1 neural activity predict T2 word reading, controlling
-# for T1 nonverbal IQ and T1 word reading? 
+# for T1 nonverbal IQ and T1 word reading? Base R only; no standardization.
 # Input: neural_regression_data.tsv from prepare_neural_data.R.
 # Run separately for each cohort (5-7 or 7-9):
 # source('regression_scaffolding.R')
@@ -79,8 +79,6 @@ regression_scaffolding <- function(data_file, cohort, output_dir) {
     'Model 1: wordreading_T2 ~ nonverbal_IQ_T1 + wordreading_T1',
     'Model 2: wordreading_T2 ~ nonverbal_IQ_T1 + wordreading_T1 + brain_T1mask_T1beta',
     'Separate models for each ROI and depth; original units, unstandardized coefficients.',
-    'Within each ROI/depth, both models use the same complete observations.',
-    'No additional outlier exclusions. All reported p-values are uncorrected, two-sided coefficient tests or nested-model F tests.',
     capture.output(sessionInfo())),file.path(output_dir,files[6]))
   message('Completed six scaffolding analyses for ',cohort,' in ',output_dir)
   invisible(result)
