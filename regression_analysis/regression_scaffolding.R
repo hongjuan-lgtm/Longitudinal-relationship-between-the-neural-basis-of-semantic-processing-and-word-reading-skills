@@ -1,11 +1,10 @@
 # Scaffolding: does T1 neural activity predict T2 word reading, controlling
-# for T1 nonverbal IQ and T1 word reading? Base R only; no standardization.
+# for T1 nonverbal IQ and T1 word reading? 
 # Input: neural_regression_data.tsv from prepare_neural_data.R.
 # Run separately for each cohort (5-7 or 7-9):
 # source('regression_scaffolding.R')
 # regression_scaffolding('/path/to/5-7/neural_regression_data.tsv',
 #                       cohort = '5-7', output_dir = '/path/to/results/5-7')
-# All selected scans were retained during preparation; no outlier exclusions here.
 
 regression_scaffolding <- function(data_file, cohort, output_dir) {
   if (length(cohort) != 1L || is.na(cohort) || !cohort %in% c('5-7', '7-9'))
