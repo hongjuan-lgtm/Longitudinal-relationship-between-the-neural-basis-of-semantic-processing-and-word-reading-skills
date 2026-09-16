@@ -22,11 +22,11 @@ function main_preprocess(cohort, config)
 %   config.output_root = '/path/to/derivatives/preprocessing';
 %   config.participants_5_7 = 'participants/final_participants_5-7.tsv';
 %   config.participants_7_9 = 'participants/final_participants_7-9.tsv';
-%   config.template_5_7 = 'resources/templates/younger_5-7/mw_com_prior_Age_0081.nii';
-%   config.template_7_9 = 'resources/templates/older_7-9/mw_com_prior_Age_0102.nii';
+%   config.template_5_7 = 'preprocessing/templates/mw_com_prior_Age_0081.nii';
+%   config.template_7_9 = 'preprocessing/templates/mw_com_prior_Age_0102.nii';
 %   config.spm_path = '/path/to/spm12';
-%   config.functions_dir = 'scripts/02_preprocessing/functions';
-%   config.third_party_dir = 'scripts/02_preprocessing/third_party';
+%   config.functions_dir = 'preprocessing/functions';
+%   config.third_party_dir = 'preprocessing/third_party';
 %   main_preprocess('5-7', config);
 
 if nargin ~= 2
