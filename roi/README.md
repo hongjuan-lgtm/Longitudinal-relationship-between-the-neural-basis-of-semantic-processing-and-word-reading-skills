@@ -11,9 +11,9 @@ and are provided in `masks/`:
 
 | ROI | Anatomical definition | File |
 | --- | --- | --- |
-| AG | Left angular gyrus | `masks/AG_L_aal_mask.nii` |
-| pMTG | Left middle temporal gyrus restricted to MNI y < −35 mm | `masks/pMTG.nii` |
-| vIFG | Union of the left triangular and orbital parts of the inferior frontal gyrus | `masks/IFG_tri_orb_L_aal_mask.nii` |
+| AG | Left angular gyrus | `masks/AG_L.nii` |
+| pMTG | Left middle temporal gyrus restricted to MNI y < −35 mm | `masks/pMTG_L.nii` |
+| vIFG | Union of the left triangular and orbital parts of the inferior frontal gyrus | `masks/IFG_L.nii` |
 
 ## Top-100 voxel selection
 
